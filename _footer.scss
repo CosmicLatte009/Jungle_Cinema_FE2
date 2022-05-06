@@ -1,0 +1,6 @@
+.foo {
+    background: $gray;
+    p {
+        @include font-style($font-Robo, $font-22, $font-w700, $black)
+    }
+}  
