@@ -1,8 +1,0 @@
-@import "variables";
-
-@mixin font-style($font, $size, $weight, $color) {
-    font-family: $font;
-    font-size: $size;
-    font-weight: $weight;
-    color: $color;
-}
