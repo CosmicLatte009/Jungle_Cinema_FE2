@@ -112,7 +112,7 @@
             .grade__span {
                 &::before {
                     content: "";
-                    background-image: url("../../img/Star\ 1.png");
+                    background-image: url("../img/Star\ 1.png");
                     background-size: 14px 14px;
                     width: 14px;
                     height: 14px;
@@ -157,7 +157,7 @@
             .movie__teaser {
                 &::before {
                     content: "";
-                    background-image: url("../../img/play-circle.png");
+                    background-image: url("../img/play-circle.png");
                     background-size: 16px 16px;
                     width: 16px;
                     height: 16px;
