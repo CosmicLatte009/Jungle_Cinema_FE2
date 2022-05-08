@@ -1,6 +1,66 @@
 .foo {
     background: $gray;
-    p {
+    .foo__div {
+        width: 1190px;
+        margin: 0 auto;
+        padding: 53px 371px 38px 365px;
+    }
+
+    .foo__strong {
+        display: inline-block;
         @include font-style($font-Robo, $font-22, $font-w700, $black)
+    }
+
+    .foo__hr {
+        border: 0.5px solid $border-gray;
+        margin: 42px 0 36px;
+        }
+
+    .foo__dl {
+        float: left;
+    }
+
+    .foo__dt {
+        display: inline-block;
+        @include font-style($font-Noto, $font-14, $font-w700, $foo-gray);
+    }
+
+    .foo__dd {
+        display: inline-block;
+        @include font-style($font-Noto, $font-14, $font-w400, $foo-gray);
+    }
+
+    .foo__dd--hidden {
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: polygon(0 0, 0 0, 0 0);
+    }
+
+    .foo__dt--hidden {
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        clip-path: polygon(0 0, 0 0, 0 0);
+    }
+
+    .foo__sns {
+        float: right;
+        vertical-align: center;
+    }
+
+    .foo__sns-insta {
+        margin-left: 25px;
+    }
+
+    .foo__sns-facebook {
+        margin-left: 30px;
+    }
+
+    .foo__p {
+        float: right;
+        @include font-style($font-Noto, $font-14, $font-w700, $foo-gray);
     }
 }  

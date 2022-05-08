@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>정글 시네마 영화 목록</title>
+   <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Roboto:wght@700;900&display=swap">
+  
 </head>
 <body>
     <main class="container">
@@ -20,38 +24,239 @@
             </nav>
         </header>
         <section class="container__section">
-            <ul class="container__list">
-                <li class="list__movie">
-                    <img src="./img/포스터 이미지.png" width="180" alt="위니브월드 포스터" class="list__img-weniv">
-                    <strong class="list__strong-weniv">위니브 월드 : 새로운 시대</strong>
+            <ul class="container__movie">
+                <li class="movie__wrap">
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지.png" width="180" alt="위니브월드 포스터" class="movie__img">
+                        <strong class="movie__strong">위니브 월드 : 새로운 시대</strong>
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">판타지</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 9.05</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.03.27</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">라이캣, 소울곰, 개리씨</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" onclick = "location.href = 'https://www.megabox.co.kr/booking' " class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" onclick = "location.href = 'https://www.megabox.co.kr/movie-detail/trailer?rpstMovieNo=22012600' " class="movie__teaser">예고편</button>
+                    </div>
+
                 </li>
-                <li class="list__movie">
-                    <img src="./img/포스터 이미지 (1).png" width="180" alt="눈떠보니 코딩테스트 포스터" class="list__img-coding-test">
-                    <strong class="list__strong-coding-test">눈떠보니 코딩테스트 전...</strong>
+                <li class="movie__wrap">
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지 (1).png" width="180" alt="눈떠보니 코딩테스트 포스터" class="movie__img">
+                        <strong class="movie__strong">눈떠보니 코딩테스트 전...</strong>
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">스릴러</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 8.25</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.04.01</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">자바독, 개리씨, 빙키</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" class="movie__teaser">예고편</button>
+                    </div>
                 </li>
-                <li class="list__movie">
-                    <img src="./img/포스터 이미지 (2).png" width="180" alt="파이썬 부트캠프 포스터" class="list__img-python-bootcamp">
-                    <strong class="list__strong-python-bootcamp">파이썬 부트캠프</strong> 
+                <li class="movie__wrap">
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지 (2).png" width="180" alt="파이썬 부트캠프 포스터" class="movie__img">
+                        <strong class="movie__strong">파이썬 부트캠프</strong> 
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">드라마</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 8.77</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.04.12</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">캣, 파이, 썬, 뮤라</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" class="movie__teaser">예고편</button>
+                    </div>
                 </li>    
-                <li class="list__movie">  
-                    <img src="./img/포스터 이미지 (3).png" width="180" alt="파이큐티의 사랑 포스터" class="list__img-PyQt-tutorial">
-                    <strong class="list__strong-PyQt">파이큐티의 사랑</strong>      
+                <li class="movie__wrap">  
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지 (3).png" width="180" alt="파이큐티의 사랑 포스터" class="movie__img">
+                        <strong class="movie__strong">파이큐티의 사랑</strong>      
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">로맨스</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 8.81</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.04.08</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">파이썬, 큐티</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" class="movie__teaser">예고편</button>
+                    </div>
                 </li> 
-                <li class="list__movie">  
-                    <img src="./img/포스터 이미지 (4).png" width="180" alt="NGINX 파헤치기 포스터"  class="list__img-NGINX">
-                    <strong class="list__strong-NGINX" >NGINX의 춤</strong>      
+                <li class="movie__wrap">  
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지 (4).png" width="180" alt="NGINX 파헤치기 포스터"  class="movie__img">
+                        <strong class="movie__strong" >NGINX의 춤</strong>      
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">드라마</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 9.88</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.04.15</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">NGINX, 노션</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" class="movie__teaser">예고편</button>
+                    </div>
                 </li>   
-                <li class="list__movie">  
-                    <img src="./img/포스터 이미지 (5).png" width="180" alt="어쩌다밋업 포스터"  class="list__img-meetUP">
-                    <strong class="list__strong-meetUP" >어쩌다 밋업</strong>      
+                <li class="movie__wrap">
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지 (5).png" width="180" alt="어쩌다밋업 포스터"  class="movie__img">
+                        <strong class="movie__strong" >어쩌다 밋업</strong>      
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">드라마</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 9.25</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.04.17</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">라이캣, 자바독, 소울곰</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" class="movie__teaser">예고편</button>
+                    </div>
                 </li>
-                <li class="list__movie">  
-                    <img src="./img/포스터 이미지 (6).png" width="180" alt="파이게임 포스터"  class="list__img-PyGame">
-                    <strong cla ss="list__strong-PyGame">파이게임 어드벤처</strong>      
+                <li class="movie__wrap">  
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지 (6).png" width="180" alt="파이게임 포스터"  class="movie__img">
+                        <strong class="movie__strong">파이게임 어드벤처</strong>      
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">판타지액션</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 8.56</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.04.05</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">개리씨, 파이썬</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" class="movie__teaser">예고편</button>
+                    </div>
                 </li>
-                <li class="list__movie">  
-                    <img src="./img/포스터 이미지 (7).png" width="180" alt="MBIT 포스터" class="list__img-MBIT"> 
-                    <strong class="list__strong-MBIT">MBIT는 내 운명</strong>        
+                <li class="movie__wrap">  
+                    <div class="movie__tit">
+                        <img src="./img/포스터 이미지 (7).png" width="180" alt="MBIT 포스터" class="movie__img"> 
+                        <strong class="movie__strong">MBIT는 내 운명</strong>        
+                    </div>
+                    <div class="movie__info">
+                        <div class="div__summary">
+                            <p class="summary__p">개요</p>
+                            <span class="summary__span">로맨스</span>
+                        </div>
+                        <div class="div__grade">
+                            <p class="grade__p">평점</p>
+                            <span class="grade__span"> 9.02</span>
+                        </div>
+                        <div class="div__release">
+                            <p class="release__p">개봉</p>
+                            <span class="release__span">2021.04.12</span>
+                        </div>
+                        <div class="div__appearance">
+                            <p class="appearance__p">출연</p>
+                            <span class="appearance__span">라이캣, 개리씨, 자바독</span>
+                        </div>
+                    </div>
+                    <div class="movie__button">
+                        <button type="button" class="movie__ticketing">예매하기</button>
+                        <div class="movie__v-line"></div>
+                        <button type="button" class="movie__teaser">예고편</button>
+                    </div>
                 </li>
             </ul>
      
@@ -59,19 +264,31 @@
     </main> 
  
     <footer class="foo">
-        <p class="foo__p">Jungle Cinema</p>
-        <a href="" class="foo__sns-twitter"></a>
-        <a href="" class="foo__sns-insta"></a>
-        <a href="" class="foo__sns-facebook"></a>
-        <hr class="foo__hr">
-        <dl class="foo__dl"> 
-            <dt class="foo__dt">(주) 정글 시네마</dt><dd class="foo__dd foo__dd--hidden">회사명</dd>
-            &#124;<dt class="foo__dt">대표</dt><dd class="foo__dd">라이언</dd>
-            &#124;<dt class="foo__dt">사업자 번호</dt><dd class="foo__dd">000-0000-0000</dd>
-            &#124;<dt class="foo__dt foo__dt--hidden">하는일</dt><dd class="foo__dd">광고 영화 및 비디오물 제작업</dd>
-            &#124;<dt class="foo__dt">주소</dt><dd class="foo__dd">서울특별시</dd>
-        </dl> 
-        <cite class="foo__cite">&COPY; The Jungle</cite>
+        <div class="foo__div">
+            <strong class="foo__strong">Jungle Cinema</strong>
+            <div class="foo__sns">
+                <a href="https://twitter.com/home" class="foo__sns-twitter" style="text-decoration:none">
+                    <img src="./img/twitter.png" alt="트위터" width="22px">
+                </a>
+                <a href="https://www.instagram.com/" class="foo__sns-insta"
+                style="text-decoration:none">
+                    <img src="./img/instagram.png" alt="인스타그램" width="22px">
+                </a>
+                <a href="https://ko-kr.facebook.com/" class="foo__sns-facebook"
+                style="text-decoration:none">
+                    <img src="./img/facebook.png" alt="페이스북" width="22px">
+                </a>
+            </div>
+            <hr class="foo__hr">
+            <dl class="foo__dl"> 
+                <dt class="foo__dt">(주) 정글 시네마</dt><dd class="foo__dd foo__dd--hidden"> 회사명</dd>
+                &#124; <dt class="foo__dt">대표 </dt> <dd class="foo__dd"> 라이언</dd>
+                &#124; <dt class="foo__dt">사업자 번호 </dt> <dd class="foo__dd"> 000-0000-0000</dd>
+                &#124; <dt class="foo__dt foo__dt--hidden">하는일 </dt><dd class="foo__dd"> 광고 영화 및 비디오물 제작업</dd>
+                &#124; <dt class="foo__dt">주소 </dt> <dd class="foo__dd"> 서울특별시</dd>
+            </dl> 
+            <p class="foo__p">&COPY; The Jungle</p>
+    </div>
     </footer> 
 </body>
 </html>     

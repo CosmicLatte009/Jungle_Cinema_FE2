@@ -1,13 +1,10 @@
-body {
-  margin: 0;
-}
-
 .container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 1060px;
   height: 1170px;
   margin: 86px auto 135px;
+  padding: 41px 28px 31px 29px;
   background: #F2F2F2;
   border-style: solid;
   border-width: 2px;
@@ -15,32 +12,44 @@ body {
   border-color: #BDBDBD;
 }
 
-.container__header h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 700, Bold;
-  color: #000000;
-  text-align: center;
-  margin-top: 41px;
+.container__header {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.container__header hr {
+.container__header .header__h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+.container__header .header__hr {
   width: 650px;
   color: #BDBDBD;
   margin-top: 37px;
 }
 
-.container__header nav {
-  margin: 28px auto 0;
+.container__header .header__nav {
+  margin: 28px auto 28px;
+  text-align: center;
 }
 
-.container__header nav a {
+.container__header .header__nav a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500, Medium;
+  font-weight: 500;
   color: #828282;
   margin-right: 60px;
+}
+
+.container__header .header__nav a:hover {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #000000;
 }
 
 .container__section {
@@ -48,26 +57,229 @@ body {
   box-sizing: border-box;
   width: 1003px;
   height: 962px;
-  margin: 0 auto;
+  margin: 0 auto 31px;
+  display: inline-block;
   background: #FFFFFF;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #BDBDBD;
   border-radius: 15px;
-  border-color: #BDBDBD;
 }
 
-.container__section ul {
+.container__section .container__movie {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (220px)[4];
+      grid-template-columns: repeat(4, 220px);
+  -ms-grid-rows: (441px)[2];
+      grid-template-rows: repeat(2, 441px);
+  gap: 23px;
   list-style: none;
+  margin: 26px 27px 30px;
+  padding-left: 0px;
+}
+
+.container__section .container__movie .movie__wrap {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container__section .container__movie .movie__tit {
+  padding: 19px 20px 14px;
+}
+
+.container__section .container__movie .movie__tit .movie__strong {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #000000;
+}
+
+.container__section .container__movie .movie__tit .movie__img {
+  margin-bottom: 11px;
+}
+
+.container__section .container__movie .movie__info {
+  width: 180px;
+  margin: 0 20px 18px;
+}
+
+.container__section .container__movie .movie__info .div__summary,
+.container__section .container__movie .movie__info .div__release,
+.container__section .container__movie .movie__info .div__appearance {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.container__section .container__movie .movie__info .div__grade {
+  float: right;
+  margin-bottom: 5px;
+}
+
+.container__section .container__movie .movie__info p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #828282;
+  line-height: 18.82px;
+  display: inline-block;
+}
+
+.container__section .container__movie .movie__info span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 18.82px;
+}
+
+.container__section .container__movie .movie__info .grade__span::before {
+  content: "";
+  background-image: url("/img/Star 1.png");
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.container__section .container__movie .movie__button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+  width: 220px;
+  height: 41px;
+  background: #F2F2F2;
+  border-top: 1px solid #BDBDBD;
+}
+
+.container__section .container__movie .movie__button .movie__v-line {
+  position: absolute;
+  border-left: 1px solid #BDBDBD;
+  height: 50px;
+  left: 50%;
+}
+
+.container__section .container__movie .movie__button button {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.container__section .container__movie .movie__button .movie__ticketing {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding: 9px 28px 12px 27px;
+  background: #F2F2F2;
+  line-height: 20.27px;
+}
+
+.container__section .container__movie .movie__button .movie__teaser {
+  padding: 9px 32px 12px 23px;
+  background: #F2F2F2;
+  float: right;
+  line-height: 20.27px;
+}
+
+.container__section .container__movie .movie__button .movie__teaser::before {
+  content: "";
+  background-image: url("/img/play-circle.png");
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
 }
 
 .foo {
   background: #F2F2F2;
 }
 
-.foo p {
+.foo .foo__div {
+  width: 1190px;
+  margin: 0 auto;
+  padding: 53px 371px 38px 365px;
+}
+
+.foo .foo__strong {
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: 22px;
-  font-weight: 700, Bold;
+  font-weight: 700;
   color: #000000;
+}
+
+.foo .foo__hr {
+  border: 0.5px solid #BDBDBD;
+  margin: 42px 0 36px;
+}
+
+.foo .foo__dl {
+  float: left;
+}
+
+.foo .foo__dt {
+  display: inline-block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4f4f4f;
+}
+
+.foo .foo__dd {
+  display: inline-block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #4f4f4f;
+}
+
+.foo .foo__dd--hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+          clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.foo .foo__dt--hidden {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+          clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.foo .foo__sns {
+  float: right;
+  vertical-align: center;
+}
+
+.foo .foo__sns-insta {
+  margin-left: 25px;
+}
+
+.foo .foo__sns-facebook {
+  margin-left: 30px;
+}
+
+.foo .foo__p {
+  float: right;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4f4f4f;
 }
 /*# sourceMappingURL=style.css.map */
