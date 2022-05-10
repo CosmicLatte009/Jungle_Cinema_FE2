@@ -69,8 +69,10 @@
   box-sizing: border-box;
   display: -ms-inline-grid;
   display: inline-grid;
- grid-template-columns: repeat(4, 220px);
- grid-template-rows: repeat(2, 441px);
+  
+      grid-template-columns: repeat(4, 220px);
+  
+      grid-template-rows: repeat(2, 441px);
   gap: 23px;
   list-style: none;
   margin: 26px 27px 30px;
@@ -138,7 +140,7 @@
 
 .container__section .container__movie .movie__info .grade__span::before {
   content: "";
-  background-image: url("/img/Star 1.png");
+  background-image: url("../img/Star 1.png");
   background-size: 14px 14px;
   width: 14px;
   height: 14px;
@@ -190,7 +192,7 @@
 
 .container__section .container__movie .movie__button .movie__teaser::before {
   content: "";
-  background-image: url("/img/play-circle.png");
+  background-image: url("../img/play-circle.png");
   background-size: 16px 16px;
   width: 16px;
   height: 16px;
